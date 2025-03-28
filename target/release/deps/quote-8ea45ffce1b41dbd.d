@@ -1,0 +1,13 @@
+/home/katya/nft-marketplace-backend/target/release/deps/quote-8ea45ffce1b41dbd.rmeta: /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/lib.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ext.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/format.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ident_fragment.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/to_tokens.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/runtime.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/spanned.rs
+
+/home/katya/nft-marketplace-backend/target/release/deps/libquote-8ea45ffce1b41dbd.rlib: /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/lib.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ext.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/format.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ident_fragment.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/to_tokens.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/runtime.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/spanned.rs
+
+/home/katya/nft-marketplace-backend/target/release/deps/quote-8ea45ffce1b41dbd.d: /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/lib.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ext.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/format.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ident_fragment.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/to_tokens.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/runtime.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/spanned.rs
+
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/lib.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ext.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/format.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/ident_fragment.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/to_tokens.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/runtime.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.14/src/spanned.rs:

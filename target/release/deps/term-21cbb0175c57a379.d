@@ -1,0 +1,12 @@
+/home/katya/nft-marketplace-backend/target/release/deps/term-21cbb0175c57a379.rmeta: /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/lib.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/mod.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/searcher.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/compiled.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/names.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parm.rs
+
+/home/katya/nft-marketplace-backend/target/release/deps/libterm-21cbb0175c57a379.rlib: /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/lib.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/mod.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/searcher.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/compiled.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/names.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parm.rs
+
+/home/katya/nft-marketplace-backend/target/release/deps/term-21cbb0175c57a379.d: /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/lib.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/mod.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/searcher.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/compiled.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/names.rs /home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parm.rs
+
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/lib.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/mod.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/searcher.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/compiled.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parser/names.rs:
+/home/katya/.cargo/registry/src/github.com-1ecc6299db9ec823/term-0.7.0/src/terminfo/parm.rs:

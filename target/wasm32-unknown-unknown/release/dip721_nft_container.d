@@ -1,0 +1,1 @@
+/home/katya/nft-marketplace-backend/target/wasm32-unknown-unknown/release/dip721_nft_container.wasm: /home/katya/nft-marketplace-backend/build.rs /home/katya/nft-marketplace-backend/src/http.rs /home/katya/nft-marketplace-backend/src/lib.rs

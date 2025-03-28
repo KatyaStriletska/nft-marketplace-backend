@@ -46,12 +46,17 @@ fn http_request(/* req: HttpRequest */) /* -> HttpResponse */
     STATE.with(|state| {
         let state = state.borrow();
         let url = req.url.split('?').next().unwrap_or("/");
+        println!("Received URL: {}", req.url);
+
         let cert = format!(
             "certificate=:{}:, tree=:{}:",
             base64::encode(api::data_certificate().unwrap()),
             witness(&url)
         )
+
         .into();
+        println!("Cert: {}", cert);
+
         let mut path = url[1..].split('/')
             .map(|segment| percent_decode_str(segment).decode_utf8().unwrap());
         let mut headers = HashMap::from_iter([
@@ -135,6 +140,7 @@ fn http_request(/* req: HttpRequest */) /* -> HttpResponse */
             headers,
             body,
         },));
+       
     });
 }
 
