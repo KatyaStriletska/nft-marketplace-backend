@@ -67,6 +67,7 @@ export const idlFactory = ({ IDL }) => {
     'balanceOfDip721' : IDL.Func([IDL.Principal], [IDL.Nat64], ['query']),
     'burnDip721' : IDL.Func([IDL.Nat64], [TxReceipt], []),
     'getApprovedDip721' : IDL.Func([IDL.Nat64], [TxReceipt], ['query']),
+    'getAssetDip721' : IDL.Func([IDL.Nat64], [IDL.Vec(IDL.Nat8)], ['query']),
     'getMetadataDip721' : IDL.Func([IDL.Nat64], [MetadataResult], ['query']),
     'getMetdataForUserDip721' : IDL.Func(
         [IDL.Principal],
@@ -109,6 +110,14 @@ export const idlFactory = ({ IDL }) => {
         ['query'],
       ),
     'symbolDip721' : IDL.Func([], [IDL.Text], ['query']),
+<<<<<<< HEAD
+=======
+    'tokensOfOwnerDip721' : IDL.Func(
+        [IDL.Principal],
+        [IDL.Vec(IDL.Nat64)],
+        ['query'],
+      ),
+>>>>>>> e97f63588a9c87b2f7d6bf60a894a3406c31f07c
     'totalSupplyDip721' : IDL.Func([], [IDL.Nat64], ['query']),
     'transferFromDip721' : IDL.Func(
         [IDL.Principal, IDL.Principal, IDL.Nat64],

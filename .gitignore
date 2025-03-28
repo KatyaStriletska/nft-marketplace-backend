@@ -1,0 +1,6 @@
+.dfx/
+
+# rust
+target/
+
+node_modules/

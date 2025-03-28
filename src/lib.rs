@@ -363,6 +363,29 @@ fn is_approved_for_all(operator: Principal) -> bool {
     })
 }
 
+//for user to see NFTs they own
+#[query(name = "tokensOfOwnerDip721")]
+fn tokens_of_owner(owner: Principal) -> Vec<u64> {
+    STATE.with(|state| {
+        let state = state.borrow();
+        state
+            .nfts
+            .iter()
+            .filter(|nft| nft.owner == owner)
+            .map(|nft| nft.id)
+            .collect()
+    })
+}
+
+#[query(name = "getAssetDip721")]
+fn get_asset(token_id: u64) -> Vec<u8> {
+    STATE.with(|state| {
+        let state = state.borrow();
+        state.nfts.iter().find(|nft| nft.id == token_id).map(|nft| nft.content.clone()).unwrap_or_default()
+    })
+}
+
+
 // --------------
 // mint interface
 // --------------
@@ -375,9 +398,9 @@ fn mint(
 ) -> Result<MintResult, ConstrainedError> {
     let (txid, tkid) = STATE.with(|state| {
         let mut state = state.borrow_mut();
-        if !state.custodians.contains(&api::caller()) {
-            return Err(ConstrainedError::Unauthorized);
-        }
+        //if !state.custodians.contains(&api::caller()) {
+        //    return Err(ConstrainedError::Unauthorized);
+        //}
         let new_id = state.nfts.len() as u64;
         let nft = Nft {
             owner: to,
