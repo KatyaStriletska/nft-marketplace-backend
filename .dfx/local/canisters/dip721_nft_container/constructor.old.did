@@ -68,6 +68,7 @@ service : {
   balanceOfDip721 : (principal) -> (nat64) query;
   burnDip721 : (nat64) -> (TxReceipt);
   getApprovedDip721 : (nat64) -> (TxReceipt) query;
+  getAssetDip721 : (nat64) -> (blob) query;
   getMetadataDip721 : (nat64) -> (MetadataResult) query;
   getMetdataForUserDip721 : (principal) -> (vec ExtendedMetadataResult);
   http_request : (HttpRequest) -> (HttpResponse) query;
@@ -88,6 +89,7 @@ service : {
   set_symbol : (text) -> (ManageResult);
   supportedInterfacesDip721 : () -> (vec InterfaceId) query;
   symbolDip721 : () -> (text) query;
+  tokensOfOwnerDip721 : (principal) -> (vec nat64) query;
   totalSupplyDip721 : () -> (nat64) query;
   transferFromDip721 : (principal, principal, nat64) -> (TxReceipt);
   transferFromNotifyDip721 : (principal, principal, nat64, blob) -> (TxReceipt);

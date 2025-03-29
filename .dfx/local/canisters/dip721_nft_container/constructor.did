@@ -52,6 +52,13 @@ type MintReceipt = variant {
   Ok : record { id : nat; token_id : nat64 };
   Err : variant { Unauthorized };
 };
+type Nft = record {
+  id : nat64;
+  content : blob;
+  owner : principal;
+  metadata : MetadataDesc;
+  approved : opt principal;
+};
 type OwnerResult = variant { Ok : principal; Err : ApiError };
 type TransactionType = variant {
   Approve : record { to : principal; token_id : nat64; from : principal };
@@ -68,8 +75,10 @@ service : (InitArgs) -> {
   balanceOfDip721 : (principal) -> (nat64) query;
   burnDip721 : (nat64) -> (TxReceipt);
   getApprovedDip721 : (nat64) -> (TxReceipt) query;
+  getAssetDip721 : (nat64) -> (blob) query;
   getMetadataDip721 : (nat64) -> (MetadataResult) query;
   getMetdataForUserDip721 : (principal) -> (vec ExtendedMetadataResult);
+  getNftByIdDip721 : (nat64) -> (opt Nft) query;
   http_request : (HttpRequest) -> (HttpResponse) query;
   isApprovedForAllDip721 : (principal) -> (bool) query;
   is_custodian : (principal) -> (bool) query;
@@ -88,6 +97,7 @@ service : (InitArgs) -> {
   set_symbol : (text) -> (ManageResult);
   supportedInterfacesDip721 : () -> (vec InterfaceId) query;
   symbolDip721 : () -> (text) query;
+  tokensOfOwnerDip721 : (principal) -> (vec nat64) query;
   totalSupplyDip721 : () -> (nat64) query;
   transferFromDip721 : (principal, principal, nat64) -> (TxReceipt);
   transferFromNotifyDip721 : (principal, principal, nat64, blob) -> (TxReceipt);

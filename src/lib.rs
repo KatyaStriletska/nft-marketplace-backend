@@ -376,6 +376,14 @@ fn tokens_of_owner(owner: Principal) -> Vec<u64> {
             .collect()
     })
 }
+#[query(name = "getNftByIdDip721")]
+fn get_nft_by_id(id: u64) -> Option<Nft> {
+    STATE.with(|state| {
+        let state = state.borrow();
+        state.nfts.iter().find(|nft| nft.id == id).cloned()
+    })
+}
+
 
 #[query(name = "getAssetDip721")]
 fn get_asset(token_id: u64) -> Vec<u8> {
@@ -451,7 +459,7 @@ struct State {
     txid: u128,
 }
 
-#[derive(CandidType, Deserialize)]
+#[derive(CandidType, Deserialize, Clone)]
 struct Nft {
     owner: Principal,
     approved: Option<Principal>,
@@ -463,14 +471,14 @@ struct Nft {
 type MetadataDesc = Vec<MetadataPart>;
 type MetadataDescRef<'a> = &'a [MetadataPart];
 
-#[derive(CandidType, Deserialize)]
+#[derive(CandidType, Deserialize, Clone)]
 struct MetadataPart {
     purpose: MetadataPurpose,
     key_val_data: HashMap<String, MetadataVal>,
     data: Vec<u8>,
 }
 
-#[derive(CandidType, Deserialize, PartialEq)]
+#[derive(CandidType, Deserialize, PartialEq, Clone)]
 enum MetadataPurpose {
     Preview,
     Rendered,
@@ -483,7 +491,7 @@ struct MintResult {
 }
 
 #[allow(clippy::enum_variant_names)]
-#[derive(CandidType, Deserialize)]
+#[derive(CandidType, Deserialize, Clone)]
 enum MetadataVal {
     TextContent(String),
     BlobContent(Vec<u8>),

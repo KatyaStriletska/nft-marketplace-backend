@@ -56,6 +56,13 @@ export type MetadataVal = { 'Nat64Content' : bigint } |
   { 'TextContent' : string };
 export type MintReceipt = { 'Ok' : { 'id' : bigint, 'token_id' : bigint } } |
   { 'Err' : { 'Unauthorized' : null } };
+export interface Nft {
+  'id' : bigint,
+  'content' : Uint8Array | number[],
+  'owner' : Principal,
+  'metadata' : MetadataDesc,
+  'approved' : [] | [Principal],
+}
 export type OwnerResult = { 'Ok' : Principal } |
   { 'Err' : ApiError };
 export type TransactionType = {
@@ -85,11 +92,13 @@ export interface _SERVICE {
   'balanceOfDip721' : ActorMethod<[Principal], bigint>,
   'burnDip721' : ActorMethod<[bigint], TxReceipt>,
   'getApprovedDip721' : ActorMethod<[bigint], TxReceipt>,
+  'getAssetDip721' : ActorMethod<[bigint], Uint8Array | number[]>,
   'getMetadataDip721' : ActorMethod<[bigint], MetadataResult>,
   'getMetdataForUserDip721' : ActorMethod<
     [Principal],
     Array<ExtendedMetadataResult>
   >,
+  'getNftByIdDip721' : ActorMethod<[bigint], [] | [Nft]>,
   'http_request' : ActorMethod<[HttpRequest], HttpResponse>,
   'isApprovedForAllDip721' : ActorMethod<[Principal], boolean>,
   'is_custodian' : ActorMethod<[Principal], boolean>,
@@ -115,6 +124,7 @@ export interface _SERVICE {
   'set_symbol' : ActorMethod<[string], ManageResult>,
   'supportedInterfacesDip721' : ActorMethod<[], Array<InterfaceId>>,
   'symbolDip721' : ActorMethod<[], string>,
+  'tokensOfOwnerDip721' : ActorMethod<[Principal], BigUint64Array | bigint[]>,
   'totalSupplyDip721' : ActorMethod<[], bigint>,
   'transferFromDip721' : ActorMethod<[Principal, Principal, bigint], TxReceipt>,
   'transferFromNotifyDip721' : ActorMethod<
